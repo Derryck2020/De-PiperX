@@ -2817,6 +2817,7 @@ section .latest-projects {
 		}
 
 		.project4 img {
+			display: flex;
 			width: 450px;
 			height: 300px;
 			margin-left: 5.5rem;
