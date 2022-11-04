@@ -2357,7 +2357,135 @@ section .latest-projects {
 
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio: 3.5) {/*Samsung Galaxy  S20 ultra*/
+
+    #one div .news {
+		display: flex;
+		justify-content: flex-start;
+		font-size: 1.8rem;
+	}
+
+	#one .post {
+		position: relative;
+		max-width: 410px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#one .post .fact1.fact2.fact3 img {
+		display: flex;
+		flex-wrap: wrap;
+		width: 350px;
+		height: 200px;
+		border-radius: 1.5rem;
+	}
+
+	#one .post .fact-text {
+		display: flex;
+		font-size: 1.3rem;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	}
+
+
+    #two > div .latest-header {
+		display: flex;
+		width: 100%;
+		font-size: 1.8rem;
+		justify-content: center;
+	}
+
+	#two .latest-projects .projects .small img{
+		display: flex;
+		width: 350px;
+		height: 250px;
+		margin-bottom: 0.5rem;
+		border-radius: 1.2rem;
+		margin-left: -1em;
+	}
+
+
+	#two article .smallheading {
+		display: flex;
+		width: 100%;
+		justify-content: flex-start;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-size: 1.6rem;
+		padding: 0.1rem 0;
+	}
+
+	section .projects .text {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-size: 1.6rem;
+		padding: 0.3rem 0;
+	}
+
+	#two .projects ul li a {
+		border-radius: 7px;
+		display: flex;
+		padding: 0 2.25em;
+		justify-content: center;
+		max-width: 100px;
+		margin-top: 1.5em;
+		margin-left: 2em;
+	}
+
+	#two article ul li a .buttons {
+		width: 50%;
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { /*iPad Mini*/
+
+	header nav ul li a {
+		font-size: 1.6rem;
+	}
+
+	#banner div header p {
+		font-size: 1.4rem;
+		padding-bottom: 2rem;
+	}
+
+	#banner div header ul a {
+		font-size: 1.4rem;
+	}
+
+	#one div > header {
+		font-size: 2rem;
+	}
+
+	#one div .fact1 img {
+		width: 380px;
+		height: 250px;
+		display:flex;
+		border-radius: 1.5rem;
+		margin-bottom: 2.5rem;
+	}
+
+	#one div .fact2 img {
+		width: 380px;
+		height: 250px;
+		display: flex;
+		border-radius: 1.5rem;
+		margin-bottom: 2.5rem;
+	}
+
+	#one div .fact3 img {
+		width: 380px;
+		height: 250px;
+		display: flex;
+		border-radius: 1.5rem;
+	}
+
+	#one div .fact-text {
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 1.6rem;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	}
+
 
 	#two div {
 		margin: 2rem 1rem 0 1.5rem;
@@ -2388,6 +2516,7 @@ section .latest-projects {
 		display: flex;
 		width: 100%;
 		justify-content: center;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 		font-size: 1.6rem;
 		padding: 0.3rem 0;
 	}
@@ -2396,6 +2525,7 @@ section .latest-projects {
 		display: flex;
 		width: 100%;
 		justify-content: center;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 		font-size: 1.6rem;
 		padding: 0.3rem 0;
 	}
@@ -3043,7 +3173,7 @@ section .latest-projects {
 			ul.actions.fit.stacked {
 				width: 100%;
 			}
-
+/*
 		@media screen and (max-width: 480px) {
 
 			ul.actions:not(.fixed) {
@@ -3095,6 +3225,7 @@ section .latest-projects {
 
 		}
 
+		*/
 /* Table */
 
 	.table-wrapper {
