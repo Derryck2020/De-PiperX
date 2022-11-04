@@ -2270,49 +2270,11 @@ section .latest-projects {
 	padding: 10px 0px;
 }
 
-@media screen and (max-width: 480px){
-
-	#two div {
-		margin: 2rem 1rem 0 1.5rem;
-	}
-
-	#two > div {
-		margin: 0;
-	}
-
-	#two > div > header {
-		display: block;
-		width: 100%;
-		font-size: 1rem;
-		text-align: center;
-	}
-
-	#two .latest-projects .small img {
-		display: flex;
-		width: 400px;
-		height: 200px;
-		margin-left: -0.7rem;
-		margin-bottom: 0.3rem;
-		border-radius: 7.2rem;
-	}
-
-	section .projects .smallheading {
-		width: 100%;
-		padding-left: 0.1rem;
-		margin: 0 0 0.5rem -0.5rem;
-		padding-top: .2rem;
-	}
-
-	section .projects .actions {
-		background-color: transparent;
-		border-radius: 7px;
-		display: inline-block;
-		padding: 0 5.25em;
-		text-align: center;
-	}
-}
-
-@media screen and (max-width: 736px) {
+@media only screen /* iPhone SE, XR, 12Pro */
+    and (min-device-width: 320px) 
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
 	
 	#two div {
 		margin: 2rem 1rem 0 1.5rem;
@@ -2346,13 +2308,14 @@ section .latest-projects {
 		padding-top: .2rem;
 	}
 
-	section .projects .actions {
-		background-color: transparent;
+	#two .projects ul li a {
 		border-radius: 7px;
-		display: inline-block;
-		padding: 0 5.25em;
-		text-align: center;
-		max-width: 250px;
+		display: flex;
+		padding: 0 2.25em;
+		justify-content: center;
+		max-width: 100px;
+		margin-top: 0.5em;
+		margin-left: 2em;
 	}
 
 }
@@ -2437,7 +2400,9 @@ section .latest-projects {
 	}
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) { /*iPad Mini*/
+@media only screen 
+    and (min-device-width: 768px) 
+	and (-webkit-min-device-pixel-ratio: 2) { /*iPad Air and Mini*/
 
 	header nav ul li a {
 		font-size: 1.6rem;
@@ -2485,7 +2450,6 @@ section .latest-projects {
 		font-size: 1.6rem;
 		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	}
-
 
 	#two div {
 		margin: 2rem 1rem 0 1.5rem;
@@ -2536,6 +2500,154 @@ section .latest-projects {
 
 
 }
+
+@media screen 
+    and (min-device-width: 1024px) 
+    and (max-device-width: 1200px) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+	
+		#one div .news {
+			display: flex;
+			justify-content: flex-start;
+			font-size: 1.5em;
+		}
+
+		#one .post {
+			position: relative;
+			max-width: 410px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+	
+		#one .post .fact1 img, #one .post .fact2 img, #one .post .fact3 img{
+			display: flex;
+			flex-wrap: wrap;
+			width: 280px;
+			height: 200px;
+			border-radius: 1.5rem;
+		}
+	
+		#one .post p {
+			display: flex;
+			font-size: 1.3rem;
+			margin-top: 0.5rem;
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		}
+	
+	
+		#two > div .latest-header {
+			display: flex;
+			width: 100%;
+			font-size: 1.5em;
+			justify-content: center;
+		}
+
+		#two .latest-projects .projects {
+			display: flex;
+		}
+
+		#two .latest-projects .projects .small img{
+			display: flex;
+			width: 350px;
+			height: 250px;
+			border-radius: 1.2rem;
+		}
+	
+		#two article .smallheading {
+			display: flex;
+			width: 100%;
+			align-items: center;
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			font-size: 1.6rem;
+			padding: 0.1rem 0.5em;
+		}
+	
+		section .projects .text {
+			display: flex;
+			align-items: center;
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			font-size: 1.6rem;
+		}
+
+		section .projects .heading {
+			align-items: center;
+		}
+	
+		#two .projects ul li a {
+			border-radius: 7px;
+			display: flex;
+			padding: 0 2.25em;
+			justify-content: center;
+			max-width: 100px;
+			margin-top: 1.5em;
+			margin-left: 2em;
+		}
+	
+		#two article ul li a .buttons {
+			width: 50%;
+		}
+}
+
+@media screen 
+    and (min-device-width: 1201px) 
+    and (max-device-width: 1600px) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+
+		#two .latest-projects {
+			display: flex;
+		}
+
+		#two .latest-projects .projects {
+			display: flex;
+			flex-direction: column;
+			width: 50%;
+		}
+
+		#two .latest-projects .projects .small img{
+			display: flex;
+			width: 550px;
+			height: 300px;
+			border-radius: 1.2rem;
+		}
+
+		#two .latest-projects .projects .project2 img, .project4 img{
+			margin-left: 2rem;
+		}
+
+		#two article h3{
+			display: flex;
+			justify-content: center;
+			margin-bottom: 0.1rem;
+		}
+		
+		#two article .smallheading {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 0.1rem;
+		}
+
+		#two article .text {
+			margin-left: 2rem;
+		}
+
+		#two .projects ul li a {
+			border-radius: 7px;
+			display: flex;
+			padding: 0 2.25em;
+			justify-content: center;
+			max-width: 100px;
+			margin-top: 1.5em;
+			margin-left: 2em;
+		}
+
+		#two .projects .text li a {
+			margin-left: -3em;
+		}
+	
+		#two article ul li a .buttons {
+			width: 50%;
+		}
+	}
 
 
 
